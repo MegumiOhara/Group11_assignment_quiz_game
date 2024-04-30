@@ -1,6 +1,6 @@
 //Quiz questions - multiple choice 
 import React, { useState } from 'react';
-export default function App(){
+export default function quizPage(){
     const questions = [
         {
             questionVocab: 'femton',
@@ -112,7 +112,7 @@ export default function App(){
                         <button>Answer 1</button>
                         <button>Answer 2</button>
                         <button>Answer 3</button>
-                        <button>Answer 4</button>
+                        <button>Answer4</button>
 
                     </div>
                 </>
