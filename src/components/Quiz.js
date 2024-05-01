@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 function Quiz(){
     const questions = [
         {
-            questionVocab: 'femton',
+            questionVocab: 'vatten',
             answerOptions: [
-                {answerVocab: 'fear' , isCorrect: false},
-                {answerVocab: 'fifteen', isCorrect: true},
-                {answerVocab: 'famish' , isCorrect: false},
-                {answerVocab: 'fetch' , isCorrect: false},
+                {answerVocab: 'vet' , isCorrect: false},
+                {answerVocab: 'water', isCorrect: true},
+                {answerVocab: 'soap' , isCorrect: false},
+                {answerVocab: 'shower' , isCorrect: false},
             ],
         },
         {
@@ -66,33 +66,49 @@ function Quiz(){
             ],
         },
         {
-            questionVocab: 'cat',
+            questionVocab: 'kaffe',
             answerOptions: [
-                {answerVocab: 'cat' , isCorrect: false},
-                {answerVocab: 'kattmynta', isCorrect: false},
-                {answerVocab: 'hund' , isCorrect: false},
-                {answerVocab: 'katt' , isCorrect: true},
+                {answerVocab: 'cafe' , isCorrect: false},
+                {answerVocab: 'cafeteria', isCorrect: false},
+                {answerVocab: 'car' , isCorrect: false},
+                {answerVocab: 'coffee' , isCorrect: true},
             ],
         },
         {
-            questionVocab: 'cat',
+            questionVocab: 'Fika',
             answerOptions: [
-                {answerVocab: 'cat' , isCorrect: false},
-                {answerVocab: 'kattmynta', isCorrect: false},
-                {answerVocab: 'hund' , isCorrect: false},
-                {answerVocab: 'katt' , isCorrect: true},
+                {answerVocab: 'fiction' , isCorrect: false},
+                {answerVocab: 'coffee time', isCorrect: true},
+                {answerVocab: 'cake' , isCorrect: false},
+                {answerVocab: 'fist' , isCorrect: false},
             ],
         },
         {
-            questionVocab: 'cat',
+            questionVocab: 'ost',
             answerOptions: [
-                {answerVocab: 'cat' , isCorrect: false},
-                {answerVocab: 'kattmynta', isCorrect: false},
-                {answerVocab: 'hund' , isCorrect: false},
-                {answerVocab: 'katt' , isCorrect: true},
+                {answerVocab: 'cheese' , isCorrect: true},
+                {answerVocab: 'Austria', isCorrect: false},
+                {answerVocab: 'host' , isCorrect: false},
+                {answerVocab: 'milk' , isCorrect: false},
             ],
         }
     ];
+
+    //value that hold the question we are on. Starts with 0.Makes it more dynamic 
+    //instead of staying in the same question array of [0]
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    //change the current question by one everytime button is clicked
+    //add if/else so it won't break when coming to the last question
+    const answerButtonClick = () => {
+        const nextQuestion = currentQuestion +1;
+        //if the next question is less than the total number of q, go to nextq
+        //if more than total number of q, show the alert
+        if(nextQuestion < questions.length){
+            setCurrentQuestion(nextQuestion);
+        }else{
+            alert("you have reached the end of the quiz!")
+        }
+    }
 
     return(
         <div className='app'>
@@ -106,11 +122,12 @@ function Quiz(){
 						<div className='question-count'>
 							<span>Question 1</span>/{questions.length}
 						</div>
-						<div className='question-text'>{questions[0].questionVocab}</div>
+						<div className='question-text'>{questions[currentQuestion].questionVocab}</div>
 					</div>
 					<div className='answer-section'>
-						{questions[0].answerOptions.map((answerOption) => 
-                    <button>{answerOption.answerVocab}</button>)}
+                        {/*use map function to reiterate the answerOptions on screen*/}
+						{questions[currentQuestion].answerOptions.map((answerOption) => 
+                    <button onClick={answerButtonClick}>{answerOption.answerVocab}</button>)}
 					</div>
 				</>
 			)}
