@@ -109,10 +109,7 @@ export default function quizPage(){
                         <div className='question-text'>This is where teh question text sohuld go</div>
                     </div>
                     <div className='answer-section'>
-                        <button>Answer 1</button>
-                        <button>Answer 2</button>
-                        <button>Answer 3</button>
-                        <button>Answer4</button>
+                        {questions[0].answerOptions}
 
                     </div>
                 </>
