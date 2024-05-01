@@ -4,8 +4,11 @@ import Register from './Components/Register';
 function App() {
   return (
     <div>
-      <Login />
-      <Register />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" lement={<Login />} />
+      </Routes>
     </div>
 
   );
