@@ -1,31 +1,29 @@
 import "../index.css";
 
+const Login = () => {
     return (
         <div className="container">
-             <form className="form-container">
-               <h1>Login</h1>
-                <label>
-                    <input type="Text"
-                     placeholder="Name" 
-        
-                    />
-                         
-                </label>
+             <form>
+               <h1>Register</h1>
+               <label>
+                   <input type="text"
+                     placeholder="Name"  />   
+                     
+              </label>
                 <label>
                     <input type="password"
-                     placeholder="Password"
-                      
-                    />   
+                         placeholder="Password"   />   
                              
                 </label>
-                <button className="btn" type="submit" 
+                <button className="btn" type="submit"
                  >
                 
-                    <p>Log in</p>     
+                    <p>Log In</p>     
                 </button>
               </form>
-    </div>  
+        
+        </div>  
 
 );
-
+}
 export default Login;
