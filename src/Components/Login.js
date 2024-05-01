@@ -7,20 +7,18 @@ import "../index.css";
                 <label>
                     <input type="Text"
                      placeholder="Name" 
-                     value={name}
-                     onChange={(e) => setName(e.target.value)} 
+        
                     />
                          
                 </label>
                 <label>
                     <input type="password"
                      placeholder="Password"
-                     value={password}
-                     onChange={(e) => setPassword(e.target.value)}  
+                      
                     />   
                              
                 </label>
-                <button className="btn" type="submit" onCliock={handleSubmit}
+                <button className="btn" type="submit" 
                  >
                 
                     <p>Log in</p>     
@@ -29,5 +27,5 @@ import "../index.css";
     </div>  
 
 );
-}
+
 export default Login;
