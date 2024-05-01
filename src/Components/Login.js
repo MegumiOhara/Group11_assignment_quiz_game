@@ -4,7 +4,7 @@ const Login = () => {
     return (
         <div className="container">
              <form>
-               <h1>Register</h1>
+               <h1>Login</h1>
                <label>
                    <input type="text"
                      placeholder="Name"  />   
