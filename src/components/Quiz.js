@@ -106,13 +106,11 @@ function Quiz(){
 						<div className='question-count'>
 							<span>Question 1</span>/{questions.length}
 						</div>
-						<div className='question-text'>This is where the question text should go</div>
+						<div className='question-text'>{questions[0].questionVocab}</div>
 					</div>
 					<div className='answer-section'>
-						<button>Answer 1</button>
-						<button>Answer 2</button>
-						<button>Answer 3</button>
-						<button>Answer 4</button>
+						{questions[0].answerOptions.map((answerOption) => 
+                    <button>{answerOption.answerVocab}</button>)}
 					</div>
 				</>
 			)}
