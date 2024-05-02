@@ -97,6 +97,7 @@ function Quiz(){
     //value that hold the question we are on. Starts with 0.Makes it more dynamic 
     //instead of staying in the same question array of [0]
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [showScore, setShowScore] = useState(false);
     //change the current question by one everytime button is clicked
     //add if/else so it won't break when coming to the last question
     const answerButtonClick = () => {
@@ -108,19 +109,22 @@ function Quiz(){
         }else{
             alert("you have reached the end of the quiz!")
         }
+
+    
     }
 
     return(
         <div className='app'>
 			{/* HINT: replace "false" with logic to display the 
       score when the user has answered all the questions */}
-			{false ? (
+			{showScore ? (
 				<div className='score-section'>You scored 1 out of {questions.length}</div>
 			) : (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Question 1</span>/{questions.length}
+                            {/*question number cannot be hardcoded, need to be incremented*/}
+							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionVocab}</div>
 					</div>
