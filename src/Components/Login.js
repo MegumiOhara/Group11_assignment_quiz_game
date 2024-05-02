@@ -45,17 +45,17 @@ const Login = () => {
                 <label>
                     <input type="Text"
                      placeholder="Name" />
-                     {/*value={name}
-                     onChange={(e) => setName(e.target.value)} */}         
+                     value={name}
+                     onChange={(e) => setName(e.target.value)}          
                 </label>
                 <label>
                     <input type="password"
                      placeholder="Password" />
-                     {/*value={password}
-                     onChange={(e) => setPassword(e.target.value)} */}            
+                     value={password}
+                     onChange={(e) => setPassword(e.target.value)}             
                 </label>
                 <button className="btn" type="submit"> 
-                {/* onCliock={handleSubmit} */}
+                 onCliock={handleSubmit} 
                  
                 
                     <p>Log in</p>     
