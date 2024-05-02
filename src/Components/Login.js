@@ -11,7 +11,7 @@ const Login = () => {
 
     const checkUser = (users) => {
       const user = users.find(
-        (user) => user.Name === Name && user.password === password);
+        (user) => user.name === name && user.password === password);
         console.log(user)
       if (user.name === name && user.password === password) return user;
     };
@@ -22,45 +22,41 @@ const Login = () => {
         if (name ==="" || password === "") {
             alert ("All fields are required!");
         }
-
+        
         const user = await axios
         .get("/users")
         .then((res) => checkUser(res.data, name, password))
-        .catch ((error) => {
-            console.log(error)
-        })
+        .catch ((error) => 
+            console.log(error));
 
         if (user.name === name && user.password === password) {
             navigate("/");
 
-            locslStorage.setItem("user", JSON.stringify(user.id));
+            localStorage.setItem("user", JSON.stringify(user.id));
         }
         setName("");
         setPassword("");
-    }
+    };
 
     return (
         <div className="container">
-             <form className="form-container">
+             <form>
                <h1>Login</h1>
                 <label>
                     <input type="Text"
-                     placeholder="Name" 
-                     value={name}
-                     onChange={(e) => setName(e.target.value)} 
-                    />
-                         
+                     placeholder="Name" />
+                     {/*value={name}
+                     onChange={(e) => setName(e.target.value)} */}         
                 </label>
                 <label>
                     <input type="password"
-                     placeholder="Password"
-                     value={password}
-                     onChange={(e) => setPassword(e.target.value)}  
-                    />   
-                             
+                     placeholder="Password" />
+                     {/*value={password}
+                     onChange={(e) => setPassword(e.target.value)} */}            
                 </label>
-                <button className="btn" type="submit" onCliock={handleSubmit}
-                 >
+                <button className="btn" type="submit"> 
+                {/* onCliock={handleSubmit} */}
+                 
                 
                     <p>Log in</p>     
                 </button>
