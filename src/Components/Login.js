@@ -4,8 +4,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const [name, setName] = useState("");
-    const [password, setPassword] = useState("");
+    const [name, setName] = userState("");
+    const [password, setPassword] = userState("");
 
     const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ const Login = () => {
         e.preventDefault ();
 
         if (name ==="" || password === "") {
-            alert ("All fields are required!");
+            alert ("All fields are required");
         }
         
         const user = await axios
@@ -33,6 +33,8 @@ const Login = () => {
             navigate("/");
 
             localStorage.setItem("user", JSON.stringify(user.id));
+
+            localStorage.removeItem("user");
         }
         setName("");
         setPassword("");
@@ -41,9 +43,9 @@ const Login = () => {
     return (
         <div className="container">
              <form>
-               <h1>Login</h1>
+               <h1>Log in</h1>
                 <label>
-                    <input type="Text"
+                    <input type="text"
                      placeholder="Name" />
                      value={name}
                      onChange={(e) => setName(e.target.value)}          
