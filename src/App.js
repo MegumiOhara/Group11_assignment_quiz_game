@@ -1,5 +1,9 @@
+import Button from './Button/Button'
+
 function App() {
-  return <div>test</div>;
+  return <div>test
+    <Button />
+  </div>;
 }
 
 export default App;
