@@ -21,16 +21,17 @@ function App() {
  }
 
   return (
-    <div className="App">
-      <Button>Start the Game</Button>
-      {
-        step !== questions.length ? (
-        <Game  question={question} onClickVariant={onClickVariant}/>
-         ) : (
-         <Result correct={correct}/>
-         )}
+    <div className="container">
+      <div className="App">
+        {
+          step !== questions.length ? (
+          <Game  question={question} onClickVariant={onClickVariant}/>
+          ) : (
+          <Result correct={correct}/>
+          )}
+      </div>
     </div>
-  );
+    );
 }
 
 export default App;
