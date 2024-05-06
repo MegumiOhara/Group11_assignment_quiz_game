@@ -129,7 +129,7 @@ function Quiz(){
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-                            {/*question number cannot be hardcoded, need to be incremented*/}
+                            {/*question number cannot be hardcoded, need to be incremented sp currentQuestion variable +1*/}
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionVocab}</div>
@@ -144,9 +144,6 @@ function Quiz(){
 		</div>
 	);
 }
-//activeQuestions - keep track of current question
-//selectdAnswer- which answer user has selected
-
 
 
 export default Quiz;
