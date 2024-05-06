@@ -116,8 +116,6 @@ function Quiz(){
         }else{
             setShowScore(true);
         }
-
-    
     }
 
     return(
@@ -137,7 +135,7 @@ function Quiz(){
 					<div className='answer-section'>
                         {/*use map function to reiterate the answerOptions on screen*/}
 						{questions[currentQuestion].answerOptions.map((answerOption) => 
-                    <button onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</button>)}
+                    <button className='quiz-btn' onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</button>)}
 					</div>
 				</>
 			)}
