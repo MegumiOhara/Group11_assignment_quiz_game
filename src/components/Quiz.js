@@ -100,9 +100,14 @@ function Quiz(){
     //stateobject to collect score. Below shoScore is a turnery so when true-shows 'score-section'
     //when remain false, shows the message from'question-section'
     const [showScore, setShowScore] = useState(false);
+    const [score, setScore] = useState(0);
+    //if clickon button clicked and isCorrect option from the array is clicked (isCorrect = true), score variable will increment by 1
+    const answerButtonClick = (isCorrect) => {
+        if(isCorrect === true){
+            setScore(score +1);
+        }
     //change the current question by one everytime button is clicked
     //add if/else so it won't break when coming to the last question
-    const answerButtonClick = () => {
         const nextQuestion = currentQuestion +1;
         //if the next question is less than the total number of q, go to nextq
         //if more than total number of q, show the alert
@@ -117,10 +122,9 @@ function Quiz(){
 
     return(
         <div className='app'>
-			{/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
+			{/* change the hard coded messages into dynamic (const variables) once logic and function added */}
 			{showScore ? (
-				<div className='score-section'>You scored 1 out of {questions.length}</div>
+				<div className='score-section'>You scored {score} out of {questions.length}</div>
 			) : (
 				<>
 					<div className='question-section'>
