@@ -97,6 +97,8 @@ function Quiz(){
     //value that hold the question we are on. Starts with 0.Makes it more dynamic 
     //instead of staying in the same question array of [0]
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    //stateobject to collect score. Below shoScore is a turnery so when true-shows 'score-section'
+    //when remain false, shows the message from'question-section'
     const [showScore, setShowScore] = useState(false);
     //change the current question by one everytime button is clicked
     //add if/else so it won't break when coming to the last question
@@ -107,7 +109,7 @@ function Quiz(){
         if(nextQuestion < questions.length){
             setCurrentQuestion(nextQuestion);
         }else{
-            alert("you have reached the end of the quiz!")
+            setShowScore(true);
         }
 
     
@@ -131,7 +133,7 @@ function Quiz(){
 					<div className='answer-section'>
                         {/*use map function to reiterate the answerOptions on screen*/}
 						{questions[currentQuestion].answerOptions.map((answerOption) => 
-                    <button onClick={answerButtonClick}>{answerOption.answerVocab}</button>)}
+                    <button onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</button>)}
 					</div>
 				</>
 			)}
