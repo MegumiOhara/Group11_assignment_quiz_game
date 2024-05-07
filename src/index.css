@@ -12,9 +12,79 @@ code {
     monospace;
 }
 
-.container {
-  margin: 2rem;
+.nav {
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: green;
+  margin-left: 2em ;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.container {
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn-logout {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+h1 {
+  color: green;
+  font-size: 2em;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+p {
+  margin-bottom: 2rem;
+  color: hotpink;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
