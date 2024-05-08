@@ -1,4 +1,4 @@
-import './Button'
+import './Button.css'
 
 function Button ({ children, onClick }) {                      /* onClick- parametr */
 

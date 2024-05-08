@@ -1,10 +1,11 @@
-import {questions} from '../clothes-questions'
+import {questions} from './clothes-questions'
 
 function Game({ question, correct, onClickVariant }) {
+  let questionNumber = 1;
   return (
     <div>
       <span className="cauntResult">
-        {correct} / {questions.length}
+        {questionNumber} / {questions.length}
       </span>
       <h1>{question.title}</h1>
       <ul>

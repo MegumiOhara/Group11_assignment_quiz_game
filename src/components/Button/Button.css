@@ -9,4 +9,6 @@
     background-color: rgb( 88,204,2 );
     box-shadow: 0 5px rgb( 88,167,0 );
     text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
 }

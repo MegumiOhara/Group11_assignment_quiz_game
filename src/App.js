@@ -1,14 +1,15 @@
 import React from 'react'
+import { BrowserRouter, Route, Router } from 'react-router-dom';
 import './index.css';
-import Button from './components/Button/Button'
 import Result from './components/Result';
-import Game from './components/Game';
+import Game from './components/Level-2-page/Game';
 import { useState } from 'react'
-import {questions} from './clothes-questions'
+import {questions} from './components/Level-2-page/clothes-questions'
+import Levels from './components/Levels-page/Levels';
 
 function App() {
-  const [step, setStep] = React.useState(0);
-  const [correct, setCorrect] = React.useState(0);
+  const [step, setStep] = useState(0);
+  const [correct, setCorrect] = useState(0);
   const question = questions[step];
 
  const onClickVariant = (index) => {
