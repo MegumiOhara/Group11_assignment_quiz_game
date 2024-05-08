@@ -1,5 +1,5 @@
 import { authenticate } from '../helpers';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-do';
 import PropTypes from 'prop-types';
 
 
