@@ -1,12 +1,12 @@
 import React from 'react';
-import Home from './components/Home';
-import './App.css';
+import Home from './Components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Register from '/components/Register';
-import Login from '/components/Login';
-import Navbar from '/components/Navbar';
-import PrivateRoute from '/components/PrivateRoute';
-import Welcome from '/components/Welcome';
+import Register from './Components/Register';
+import Welcome from './Components/Welcome';
+import Login from './Components/Login';
+import Navbar from './Components/Navbar';
+import PrivateRoute from './Components/PrivateRoute';
+
 
 function App() {
   return (
