@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Router } from 'react-router-dom';
-import './index.css';
+import './indexTanja.css';
 import Result from './components/Result';
 import Game from './components/Level-2-page/Game';
 import { useState } from 'react'

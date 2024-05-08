@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './indexTanja.css';
 import AppTanja from './AppTanja';
 import reportWebVitals from './reportWebVitals';
 
