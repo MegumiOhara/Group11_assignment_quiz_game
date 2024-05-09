@@ -6,13 +6,14 @@ import Register from './components/Register';
 import Welcome from './components/Welcome';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
-
+import Navbar from './components/Navbar'
 
 function App() {
   return (
 
     <div >
       <BrowserRouter>
+      <Navbar />
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
