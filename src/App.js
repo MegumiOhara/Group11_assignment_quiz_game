@@ -1,11 +1,11 @@
 
 import React from 'react';
-import Home from './Components/Home';
+import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Register from './Components/Register';
-import Welcome from './Components/Welcome';
-import Login from './Components/Login';
-import PrivateRoute from './Components/PrivateRoute';
+import Register from './components/Register';
+import Welcome from './components/Welcome';
+import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
 
 
 function App() {
