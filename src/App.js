@@ -3,10 +3,11 @@ import React from 'react';
 import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
-import Welcome from './components/Welcome';
+import AppTanja from './components/AppTanja';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
@@ -17,10 +18,10 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/apptanja" element={<AppTanja />} />
           <Route path="/login" element={<Login />} />
           <Route path="user" element={<PrivateRoute>
-            <Route path="welcome" element={<Welcome />} />
+            <Route path="apptanja" element={<AppTanja />} />
           </PrivateRoute>} />
       </Routes> 
       
