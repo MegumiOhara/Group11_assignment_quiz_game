@@ -6,5 +6,6 @@ h1 {
 
 .levels {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
