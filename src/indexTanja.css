@@ -26,6 +26,7 @@ body {
   padding: 40px;
   background-color: #fff;
   position: relative;
+  color: #6a5be2;
 
   .cauntResult {
     position: absolute;
