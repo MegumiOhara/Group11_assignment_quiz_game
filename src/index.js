@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './indexTanja.css';
-import AppTanja from './AppTanja';
-import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import App from './App';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppTanja />
+    <App />
   </React.StrictMode>
+
 );
-reportWebVitals();
+

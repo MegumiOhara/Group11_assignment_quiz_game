@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 2em ;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20%;
+}
+
+button {
+  background-color: rgb( 88,204,2 );
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn-logout {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.header h1, form h1 {
+  color: #fff;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
