@@ -17,14 +17,13 @@ code {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f1f1f1;
   
 }
 
 .nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: green;
+  color: whitesmoke;
   margin-left: 2em ;
   font-weight: 500;
   font-size: larger;
