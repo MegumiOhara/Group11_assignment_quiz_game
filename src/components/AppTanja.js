@@ -3,7 +3,8 @@ import '../indexTanja.css';
 import Result from './Result';
 import Game from './Level-2-page/Game';
 import { useState } from 'react'
-import {questions} from './Level-2-page/clothes-questions'
+import {questions} from './Level-2-page/clothes-questions';
+import Levels from './Levels-page/Levels'
 
 function AppTanja() {
   const [step, setStep] = useState(0);
@@ -21,6 +22,7 @@ function AppTanja() {
 
   return (
     <div className="container">
+      <Levels />
       <div className="App">
         {
           step !== questions.length ? (
