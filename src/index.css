@@ -17,7 +17,7 @@ code {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  
+  font-size: 2rem;
 }
 
 .nav a {
@@ -60,20 +60,14 @@ button {
   right: 1%;
 }
 
-h1 {
-  color: whitesmoke;
-  font-size: 2em;
+.header {
+  color: #fff;
   margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
 
-p {
-  margin-bottom: 2rem;
-  color: hotpink;
-  font-weight: 500;
-}
 
 form {
   display: flex;
