@@ -5,15 +5,12 @@ export default function Navbar() {
 
   return (
     
-  <nav className="nav">
+  <nav className="nav"> 
     <ul>
-      <li><Link to="/">Quiz Game</Link></li>
-    </ul>
-     
-        <a href="/Register" >Register </a>
-
-        <a href="/Login" >Login </a>
-         
-    </nav>
+      <li><Link to="/apptanja">Quiz Game</Link></li>
+      <li><Link to="/">Register</Link></li>
+      <li><Link to="/">Login</Link></li>
+    </ul>       
+  </nav>
   ); 
 }

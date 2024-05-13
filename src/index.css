@@ -16,6 +16,10 @@ li {
   list-style-type: none;
 }
 
+ul {
+  display: flex;
+}
+
 .nav {
   display: flex;
   justify-content: center;
