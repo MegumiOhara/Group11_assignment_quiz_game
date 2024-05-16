@@ -11,7 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.container-quiz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 .app{
  /* background-color:#88c6ed;
   width: 450px;
@@ -23,6 +29,7 @@ code {
   display: flex;
   justify-content: space-evenly;*/
   width: 500px;
+  font-size: 20px;
   border-radius: 30px;
   padding: 40px;
   background-color: #fff;
@@ -30,8 +37,10 @@ code {
 }
 .score-section{
   display: flex;
+  flex-direction: column;
   font-size: 24px;
   align-items: center;
+  justify-content: center;
 }
 .question-section{
   width: 100%;
