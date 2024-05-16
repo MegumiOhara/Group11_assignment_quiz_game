@@ -5,11 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #b2daf9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 code {
@@ -17,78 +12,72 @@ code {
     monospace;
 }
 
-.app{
-  background-color:#88c6ed;
-  width: 450px;
-  min-height:200px;
-  height:min-content;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
+.nav {
   display: flex;
-  justify-content: space-evenly;
-}
-.score-section{
-  display: flex;
-  font-size: 24px;
+  justify-content: center;
   align-items: center;
+  padding: 10px 20px;
+  font-size: 2rem;
 }
-.question-section{
-  width: 100%;
-  position: relative;
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 2em ;
+  font-weight: 500;
+  font-size: larger;
 }
-.question-count{
-  margin-bottom: 20px;
-}
-.question-count span{
-  font-size: 28px;
-}
-.question-text{
-  margin-bottom: 12px;
-}
-.timer-text{
-  background:rgb(230,153,12);
-  padding: 15px;
-  margin-top: 20px;
-  margin-right: 20px;
-  border:5px solid rgb(255, 189, 67);
-  border-radius: 15px;
-  text-align: center;
-}
-.answer-section{
-  width: 100%;
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-button{
-  width: 100%;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #5168be;
-  border-radius: 15px;
-  display: flex;
-  padding: 5px;
-  justify-content: flex-start;
   align-items: center;
-  border: 5px solid #2f7fcf;
-  cursor:pointer;
+  margin-top: 20%;
 }
-button:hover{
-  background-color: #427fbb;
+
+button {
+  background-color: rgb( 88,204,2 );
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  
 }
-.correct{
-  background-color: #2f922f;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
 }
-.incorrect{
-  background-color: #555e7d;
+
+.btn-logout {
+  position: absolute;
+  top: 1%;
+  right: 1%;
 }
-button:focus{
-  outline: none;
+
+.header h1, form h1 {
+  color: #fff;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
-button:active{
-  background-color: rgb(43, 84, 180);
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-button svg{
-  margin-right: 5px;
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }

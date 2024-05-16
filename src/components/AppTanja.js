@@ -1,11 +1,10 @@
 import React from 'react'
-import { BrowserRouter, Route, Router } from 'react-router-dom';
-import './indexTanja.css';
-import Result from './components/Result';
-import Game from './components/Level-2-page/Game';
+import '../indexTanja.css';
+import Result from './Result';
+import Game from './Level-2-page/Game';
 import { useState } from 'react'
-import {questions} from './components/Level-2-page/clothes-questions'
-import Levels from './components/Levels-page/Levels';
+import {questions} from './Level-2-page/clothes-questions';
+import Levels from './Levels-page/Levels'
 
 function AppTanja() {
   const [step, setStep] = useState(0);
