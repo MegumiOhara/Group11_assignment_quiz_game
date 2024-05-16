@@ -12,8 +12,8 @@ function Levels() {
         <div className="container">
         <div className="levels">
             <h1>Choose the level</h1>
-                <Button>???</Button>
-                <Button onClick={chooseClick}>Clothes</Button>
+                <Button><Link to="/level1">Level 1</Link></Button>
+                <Button><Link to="/apptanja" >Level 2</Link></Button>
             </div>
         </div>
     )

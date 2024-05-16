@@ -7,6 +7,8 @@ import AppTanja from './components/AppTanja';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
+import Quiz from './components/Quiz';
+import Levels from './components/Levels-page/Levels';
 
 
 function App() {
@@ -20,8 +22,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/apptanja" element={<AppTanja />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/level1" element={<Quiz />}/>
           <Route path="user" element={<PrivateRoute>
-            <Route path="apptanja" element={<AppTanja />} />
+            <Route path="/levels" element={<Levels />} />
           </PrivateRoute>} />
       </Routes> 
       

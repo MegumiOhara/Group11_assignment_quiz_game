@@ -1,5 +1,8 @@
 //Quiz questions - multiple choice 
 import React, { useState } from 'react';
+import Button from './Button/Button';
+import { Link } from 'react-router-dom';
+
 function Quiz(){
     const questions = [
         {
@@ -120,10 +123,13 @@ function Quiz(){
 
     return(
         <div className='app'>
+            
 			{/* change the hard coded messages into dynamic (const variables) once logic and function added */}
 			{showScore ? (
 				<div className='score-section'>You scored {score} out of {questions.length}</div>
+                
 			) : (
+              
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
