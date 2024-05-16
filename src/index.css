@@ -11,8 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .app{
-  background-color:#88c6ed;
+ /* background-color:#88c6ed;
   width: 450px;
   min-height:200px;
   height:min-content;
@@ -20,7 +21,12 @@ code {
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly;*/
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
 }
 .score-section{
   display: flex;
@@ -40,44 +46,27 @@ code {
 .question-text{
   margin-bottom: 12px;
 }
-.timer-text{
-  background:rgb(230,153,12);
-  padding: 15px;
-  margin-top: 20px;
-  margin-right: 20px;
-  border:5px solid rgb(255, 189, 67);
-  border-radius: 15px;
-  text-align: center;
-}
+
 .answer-section{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-button{
-  width: 100%;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #5168be;
+.quiz-btn{
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  display: flex;
-  padding: 5px;
-  justify-content: flex-start;
-  align-items: center;
-  border: 5px solid #2f7fcf;
-  cursor:pointer;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-size: 16px;
 }
-button:hover{
+.quiz-btn:hover{
   background-color: #427fbb;
 }
-.correct{
-  background-color: #2f922f;
-}
-.incorrect{
-  background-color: #555e7d;
-}
-button:focus{
+
+.quiz-btn:focus{
   outline: none;
 }
 button:active{
@@ -113,12 +102,11 @@ button svg{
 }
 
 button {
-  background-color: rgb( 88,204,2 );
+  background-color: rgb(117, 173, 237);
   color: white;
   border: none;
   cursor: pointer;
   font-weight: 500;
-  
 }
 
 .btn {

@@ -23,6 +23,7 @@ function App() {
           <Route path="/apptanja" element={<AppTanja />} />
           <Route path="/login" element={<Login />} />
           <Route path="/level1" element={<Quiz />}/>
+          <Route path="/levels" element={<Levels />}/>
           <Route path="user" element={<PrivateRoute>
             <Route path="/levels" element={<Levels />} />
           </PrivateRoute>} />

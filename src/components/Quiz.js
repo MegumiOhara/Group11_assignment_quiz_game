@@ -126,8 +126,10 @@ function Quiz(){
             
 			{/* change the hard coded messages into dynamic (const variables) once logic and function added */}
 			{showScore ? (
-				<div className='score-section'>You scored {score} out of {questions.length}</div>
-                
+				<>
+                <div className='score-section'>You scored {score} out of {questions.length}</div>
+                <div><Button><Link to="/levels">Go Back</Link></Button></div>
+                </>
 			) : (
               
 				<>
