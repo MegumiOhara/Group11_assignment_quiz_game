@@ -102,6 +102,7 @@ function Quiz(){
     const [currentQuestion, setCurrentQuestion] = useState(0);
     //stateobject to collect score. Below showScore is a turnery in return so when true-shows 'score-section'
     //when remain false, shows the message from'question-section'
+    //remains true if nextQuestion is more than questions.length with below answerButtonC func.
     const [showScore, setShowScore] = useState(false);
     const [score, setScore] = useState(0);
     //if clickon button clicked and isCorrect option from the array is clicked (isCorrect = true), score variable will increment by 1

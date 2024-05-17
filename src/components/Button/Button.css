@@ -6,8 +6,10 @@
     cursor: pointer;
     border: none;
     border-radius: 12px;
-    background-color: rgb( 88,204,2 );
-    box-shadow: 0 5px rgb( 88,167,0 );
+    /*background-color: rgb( 88,204,2 );
+    box-shadow: 0 5px rgb( 88,167,0 );*/
+    background-color: rgb(117, 173, 237);
+    box-shadow: 0 5px rgb(55, 120, 196);
     text-transform: uppercase;
     margin-top: 10px;
     display: inline-block;
