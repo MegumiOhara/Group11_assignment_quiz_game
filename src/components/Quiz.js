@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Button from './Button/Button';
 import { Link } from 'react-router-dom';
 
+
 function Quiz(){
     const questions = [
         {
@@ -132,7 +133,7 @@ function Quiz(){
                 <div className='score-section'>You scored {score} out of {questions.length}
                     <Button><Link to="/levels">Go Back</Link></Button>
                 </div>
-                </>
+        </>
 			) : (
               
 				<>
@@ -158,6 +159,7 @@ function Quiz(){
 				</>
 			)}
 		</div>
+
         </div>
 	);
 }

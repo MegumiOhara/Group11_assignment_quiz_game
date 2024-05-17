@@ -38,6 +38,8 @@ body {
 
   .result {
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 
     h2 {
       margin-bottom: 0;

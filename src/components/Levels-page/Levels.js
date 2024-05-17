@@ -1,13 +1,10 @@
-import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import './Levels.css'
 import Welcome from "../Welcome";
+import { Link } from 'react-router-dom';
+
 
 function Levels() {
-
-    function chooseClick() {
-        console.log('Hello');
-    }
 
     return (
         
