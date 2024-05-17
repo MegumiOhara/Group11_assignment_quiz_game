@@ -90,7 +90,7 @@ button svg{
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  font-size: 2rem;
+  font-size: 2rem;  
 }
 
 .nav a {
@@ -109,7 +109,11 @@ button svg{
   align-items: center;
   margin-top: 20%;
 }
-
+.container-level{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 button {
   background-color: rgb(117, 173, 237);
   color: white;
