@@ -8,7 +8,7 @@ function Game({ question, correct, onClickVariant }) {
         {questionNumber} / {questions.length}
       </span>
       <h1>{question.title}</h1>
-      <ul>
+      <ul className="answer-section">
         {question.variants.map((text, index) => (
           <li onClick={() => onClickVariant(index)} key={text}>{text}</li>))
         }
