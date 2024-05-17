@@ -9,8 +9,7 @@ import Levels from './components/Levels-page/Levels';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
-import Quiz from './components/Quiz';
-import Levels from './components/Levels-page/Levels';
+
 
 
 function App() {
