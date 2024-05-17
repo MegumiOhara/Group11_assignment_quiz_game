@@ -78,7 +78,7 @@ function Quiz(){
             ],
         },
         {
-            questionVocab: 'Fika',
+            questionVocab: 'fika',
             answerOptions: [
                 {answerVocab: 'fiction' , isCorrect: false},
                 {answerVocab: 'coffee time', isCorrect: true},
@@ -97,10 +97,10 @@ function Quiz(){
         }
     ];
 
-    //value that hold the question we are on. Starts with 0.Makes it more dynamic 
-    //instead of staying in the same question array of [0]
+    //value that hold the question we are on. Starts with 0 as array starts with 0.
+    //instead of staying in the same question array of [0] and add +1 later for dynamic + incrementation
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    //stateobject to collect score. Below shoScore is a turnery so when true-shows 'score-section'
+    //stateobject to collect score. Below showScore is a turnery in return so when true-shows 'score-section'
     //when remain false, shows the message from'question-section'
     const [showScore, setShowScore] = useState(false);
     const [score, setScore] = useState(0);
@@ -113,7 +113,7 @@ function Quiz(){
     //add if/else so it won't break when coming to the last question
         const nextQuestion = currentQuestion +1;
         //if the next question is less than the total number of q, go to nextq
-        //if more than total number of q, show the alert
+        //if more than total number of q, show the else
         if(nextQuestion < questions.length){
             setCurrentQuestion(nextQuestion);
         }else{
@@ -137,16 +137,23 @@ function Quiz(){
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-                            {/*question number cannot be hardcoded, need to be incremented sp currentQuestion variable +1*/}
+                            {/*question number cannot be hardcoded, need to be incremented so currentQuestion variable +1*/}
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
 						</div>
+                        {/* question-text displays the questions array,displays variable of current Q- and shows the questionVocab based 
+                        on which questions  */}
 						<div className='question-text'>{questions[currentQuestion].questionVocab}</div>
 					</div>
 					<div className='answer-section'>
                         {/*use map function to reiterate the answerOptions on screen*/}
 						{questions[currentQuestion].answerOptions.map((answerOption) => 
-                    <button className='quiz-btn' onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</button>)}
-					</div>
+                    <button className='quiz-btn' 
+                        onClick={() => answerButtonClick(answerOption.isCorrect)}>
+                        {answerOption.answerVocab}</button>)}
+                        {/*each button displays the answerVocabs from answerOptions array. 
+                        onClick- when clicked, use the answerBC function which collects 
+                        the score if isCorrect is clicked */}
+                    </div>
 				</>
 			)}
 		</div>
