@@ -1,19 +1,19 @@
 import Button from "../Button/Button";
 import './Levels.css'
+import Welcome from "../Welcome";
 import { Link } from 'react-router-dom';
+
 
 function Levels() {
 
-    function handleCategory() {
-
-    }
-
     return (
-        <div className="container">
+        
+        <div className="container-level">
+            <Welcome />
         <div className="levels">
             <h1>Choose the level</h1>
-                <Button> <Link to="/quiz">Megumi's</Link></Button>
-                <Button> <Link to="/apptanja">Clothes</Link></Button>
+                <Button><Link to="/level1">Level 1</Link></Button>
+                <Button><Link to="/apptanja" >Level 2</Link></Button>
             </div>
         </div>
     )
