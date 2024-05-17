@@ -14,10 +14,12 @@ code {
 
 li {
   list-style-type: none;
+  text-decoration: none;
 }
 
 ul {
   display: flex;
+  text-decoration: none;
 }
 
 .nav {

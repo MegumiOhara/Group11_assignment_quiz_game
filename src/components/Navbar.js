@@ -7,7 +7,7 @@ export default function Navbar() {
     
   <nav className="nav"> 
     <ul>
-      <li><Link to="/apptanja">Quiz Game</Link></li>
+      <li><Link to="/levels">Quiz Game</Link></li>
       <li><Link to="/">Register</Link></li>
       <li><Link to="/">Login</Link></li>
     </ul>       

@@ -1,5 +1,9 @@
 //Quiz questions - multiple choice 
 import React, { useState } from 'react';
+import Button from './Button/Button';
+import '../indexTanja.css';
+
+
 function Quiz(){
     const questions = [
         {
@@ -119,10 +123,17 @@ function Quiz(){
     }
 
     return(
-        <div className='app'>
+        <div className='container'>
+            <div className="App">
 			{/* change the hard coded messages into dynamic (const variables) once logic and function added */}
 			{showScore ? (
-				<div className='score-section'>You scored {score} out of {questions.length}</div>
+                <>
+				<div className='result'>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt="result-img" />
+                    You scored {score} out of {questions.length}
+                </div>
+                <Button>Back to menu</Button>
+                </>
 			) : (
 				<>
 					<div className='question-section'>
@@ -132,14 +143,16 @@ function Quiz(){
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionVocab}</div>
 					</div>
-					<div className='answer-section'>
+					<ul className='answer-section'>
                         {/*use map function to reiterate the answerOptions on screen*/}
 						{questions[currentQuestion].answerOptions.map((answerOption) => 
-                    <button className='quiz-btn' onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</button>)}
-					</div>
+                    <li onClick={() => answerButtonClick(answerOption.isCorrect)}>{answerOption.answerVocab}</li>)}
+					</ul>
+    
 				</>
 			)}
-		</div>
+		    </div>
+        </div>
 	);
 }
 

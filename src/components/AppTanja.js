@@ -22,7 +22,6 @@ function AppTanja() {
 
   return (
     <div className="container">
-      <Levels />
       <div className="App">
         {
           step !== questions.length ? (
