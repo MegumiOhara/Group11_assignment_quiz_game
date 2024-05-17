@@ -1,16 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
   return (
     
-  <nav className="nav">
-      <a href="/" >Quiz Game </a>
-     
-        <a href="/Register" >Register </a>
-
-        <a href="/Login" >Login </a>
-         
-    </nav>
+  <nav className="nav"> 
+    <ul>
+      <li><Link to="/levels">Quiz Game</Link></li>
+      <li><Link to="/">Register</Link></li>
+      <li><Link to="/">Login</Link></li>
+    </ul>       
+  </nav>
   ); 
 }

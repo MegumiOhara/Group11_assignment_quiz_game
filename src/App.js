@@ -4,6 +4,8 @@ import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
 import AppTanja from './components/AppTanja';
+import Quiz from './components/Quiz';
+import Levels from './components/Levels-page/Levels';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
@@ -18,7 +20,9 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/apptanja" element={<AppTanja />} />
+          <Route path="/apptanja" exact element={<AppTanja />} />
+          <Route path="/quiz" exact element={<Quiz />} />
+          <Route path="/levels" exact element={<Levels />} />
           <Route path="/login" element={<Login />} />
           <Route path="user" element={<PrivateRoute>
             <Route path="apptanja" element={<AppTanja />} />
