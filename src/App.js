@@ -4,8 +4,6 @@ import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
 import AppTanja from './components/AppTanja';
-import Quiz from './components/Quiz';
-import Levels from './components/Levels-page/Levels';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
