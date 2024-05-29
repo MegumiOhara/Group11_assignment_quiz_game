@@ -8,7 +8,7 @@ export default function Navbar() {
 
   <nav className="nav">
     
-      <a href="/" >Quiz Game </a>
+      <a href="/quiz" >Quiz Game </a>
      
       <a href="/Register" >Register </a>
 

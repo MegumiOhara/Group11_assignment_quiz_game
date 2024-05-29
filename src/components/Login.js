@@ -28,7 +28,7 @@ const Login = () => {
 
     if (users) {
       alert(` Welcome ${users.username} to Quiz game!`);
-      navigate("/AppTanja");
+      navigate("/levels");
       localStorage.setItem("user", JSON.stringify(users.id));
     } else {
       alert("User not found. Please register");

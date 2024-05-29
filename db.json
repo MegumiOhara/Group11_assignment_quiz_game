@@ -1,16 +1,28 @@
 {
-    "users": [
-      {
-        "id": "1",
-        "username": "Supanee",
-        "email": "patsasupanee@gmail.com",
-        "password": "123456"
-      },
-      {
-        "id": "d418",
-        "username": "test",
-        "email": "test@gmail.com",
-        "password": "123"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "1",
+      "username": "Supanee",
+      "email": "patsasupanee@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "d418",
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "4a6f",
+      "username": "Megumi",
+      "email": "123@yahoo.com",
+      "password": "1234"
+    },
+    {
+      "id": "8df1",
+      "username": "11",
+      "email": "234@yahoo.com",
+      "password": "234"
+    }
+  ]
+}
