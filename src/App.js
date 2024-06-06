@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Register';
 import AppTanja from './components/AppTanja';
 import Login from './components/Login';
-import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
 import Quiz from './components/Quiz';
 import Levels from './components/Levels-page/Levels';
+
 
 
 function App() {
@@ -24,13 +24,8 @@ function App() {
           <Route path="/quiz" exact element={<Quiz />} />
           <Route path="/levels" exact element={<Levels />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/level1" element={<Quiz />}/>
           <Route path="/levels" element={<Levels />}/>
-          <Route path="user" element={<PrivateRoute>
-            <Route path="/levels" element={<Levels />} />
-          </PrivateRoute>} />
       </Routes> 
-      
     </BrowserRouter>   
     </div>
   );
